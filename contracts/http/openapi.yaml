@@ -1,0 +1,82 @@
+openapi: 3.0.3
+info:
+  title: 3D Asset Store API
+  version: 0.1.0
+  description: OpenAPI 3.0 specification for 3D Asset Store Monorepo.
+servers:
+  - url: http://localhost:4000
+    description: Local development server
+paths:
+  /healthz:
+    get:
+      summary: Liveness check
+      description: Returns 200 OK if the HTTP server process is running.
+      operationId: getHealth
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HealthResponse'
+  /readyz:
+    get:
+      summary: Readiness check
+      description: Returns 200 OK if connected to downstream dependencies (PostgreSQL).
+      operationId: getReadiness
+      responses:
+        '200':
+          description: Service is ready
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReadinessResponse'
+        '503':
+          description: Service is not ready
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReadinessResponse'
+
+components:
+  schemas:
+    HealthResponse:
+      type: object
+      required:
+        - status
+        - timestamp
+        - uptime
+      properties:
+        status:
+          type: string
+          example: ok
+        timestamp:
+          type: string
+          format: date-time
+        uptime:
+          type: number
+          example: 12.34
+    ReadinessResponse:
+      type: object
+      required:
+        - status
+        - timestamp
+        - database
+      properties:
+        status:
+          type: string
+          enum: [ready, degraded, error]
+        timestamp:
+          type: string
+          format: date-time
+        database:
+          type: object
+          required:
+            - connected
+          properties:
+            connected:
+              type: boolean
+            latencyMs:
+              type: number
+            details:
+              type: string

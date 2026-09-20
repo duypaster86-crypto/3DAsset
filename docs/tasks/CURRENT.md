@@ -2,10 +2,10 @@
 
 ## Đang làm
 
-- ID Slice/Task: chưa bắt đầu; nhận `slice-0` đầu tiên
+- ID Slice/Task: slice-0
 - Cập nhật ngày: 2026-09-16
-- Mô tả phạm vi: Khởi tạo walking skeleton cho 3D Asset Store
-- Nhánh làm việc: tạo khi nhận slice theo quy tắc trong `AGENTS.md`
+- Mô tả phạm vi: Khởi tạo walking skeleton cho 3D Asset Store (monorepo FE/BE, API health, DB migration, UI status)
+- Nhánh làm việc: feature/slice-0-walking-skeleton
 
 ## Đã làm trong phiên gần nhất
 

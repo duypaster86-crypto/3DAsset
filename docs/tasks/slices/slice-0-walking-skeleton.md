@@ -2,8 +2,8 @@
 
 - Cơ chế: Dọc
 - Mốc: MVP
-- Owner hiện tại: —
-- Nhánh: —
+- Owner hiện tại: Duy Tran
+- Nhánh: feature/slice-0-walking-skeleton
 - PR: —
 - Trạng thái: xem `../MVP-BACKLOG.md` (nguồn trạng thái duy nhất, không ghi trùng ở đây để tránh lệch)
 - Phụ thuộc: không có

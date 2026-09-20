@@ -14,7 +14,7 @@ Bảng chỉ mục cấp cao cho web thương mại điện tử tài sản số
 
 | ID | Tên | Mốc | Cơ chế | Trạng thái | Owner | Nhánh | PR | Phụ thuộc | File chi tiết |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| slice-0 | Walking skeleton | MVP | Dọc | Chưa bắt đầu | — | — | — | — | `slices/slice-0-walking-skeleton.md` |
+| slice-0 | Walking skeleton | MVP | Dọc | Đang làm | Duy Tran | feature/slice-0-walking-skeleton | — | — | `slices/slice-0-walking-skeleton.md` |
 | slice-1 | Đăng nhập và phân quyền chủ shop/khách hàng | MVP | Dọc | Chưa bắt đầu | — | — | — | slice-0 | `slices/slice-1-d-ng-nh-p-v-ph-n-quy-n-ch-shop-kh-ch-h-ng.md` |
 | slice-2 | Danh mục, tag, collection và cấu hình cửa hàng | MVP | Dọc | Chưa bắt đầu | — | — | — | slice-1 | `slices/slice-2-danh-m-c-tag-collection-v-c-u-h-nh-c-a-h-ng.md` |
 | slice-3 | Quản lý vòng đời sản phẩm | MVP | Dọc | Chưa bắt đầu | — | — | — | slice-2 | `slices/slice-3-qu-n-l-v-ng-d-i-s-n-ph-m.md` |

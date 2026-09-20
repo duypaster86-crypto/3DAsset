@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/features/system/index.ts","./src/features/system/system.test.tsx","./src/features/system/api/usesystemstatus.ts","./src/features/system/components/systemstatuscard.tsx","./src/features/system/pages/systemstatuspage.tsx","./src/test/setup.ts"],"version":"5.9.3"}
